@@ -59,7 +59,7 @@ c. Lower bound restricted, upper bound is maximum
 # [x[0],   x[1],          ..., x[high-1]]
 # [x[-l],   x[-l+1],          ..., x[high-1]]
 
-3. Stride is a more than 1, stride >= 1
+3. Stride is more than 1, stride >= 1
 
 a. Lower bound restricted, upper bound is maximum
 >>> x[low::stride]  
