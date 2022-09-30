@@ -1,6 +1,7 @@
 # Python Slicing Operator
 Positive Stride 
 
+``
 >>> x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 >>> l = len(x) 
 # l = 10
@@ -77,5 +78,5 @@ e.
 # x[0:high:stride]  
 # [x[0],   x[0+stride],     ..., last], last <=x[high-1]
 
-
+```
 
