@@ -43,21 +43,21 @@ b. Full bounds
 >>> x[::1] 
 >>> x[::] 
 # 0 to l, element at index 0 included, element at index l excluded
-# x[0] ... x[l-1]
+# [x[0] ... x[l-1]]
 # [x[0],   x[1],          ..., x[-1]]
-# x[-l] ... x[l-1]
+# [x[-l] ... x[l-1]]
 
 c. Lower bound restricted, upper bound is maximum
 >>> x[low:]  
  # low to l, element at index low included, element at index l excluded
- # [x[low], x[low+1],      ..., x[l-1]
- # [x[low], x[low+1],      ..., x[-1]
+ # [x[low], x[low+1],      ..., x[l-1]]
+ # [x[low], x[low+1],      ..., x[-1]]
  
  c. Upper bound restricted, lower bound is minimum
 >>> x[:high] 
 # 0 to high, element at index 0 included, element at index high excluded
 # [x[0],   x[1],          ..., x[high-1]]
-# [x[-l],   x[-l+1)],          ..., x[high-1]]
+# [x[-l],   x[-l+1],          ..., x[high-1]]
 
 3. Stride is a more than 1, stride >= 1
 
