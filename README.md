@@ -22,7 +22,7 @@ Positive Stride
 >>> x[low:high:stride]
 # low to high, element at index low included, 
 # then next is obtained by adding the step stride to the previous element
-# element at index `high` is excluded
+# element at index high is excluded
 # if the last jump falls to the index high-1, element at index high-1 is included
 # if the last jump does not fall to the index high-1, element at index high-1 is excluded
 # [x[low], x[low+stride], ..., last], last <=x[high-1]
@@ -48,13 +48,13 @@ b.Full bounds
 
 c.Lower bound restricted, upper bound is maximum
 >>> x[low:]  
- # low to `l, element at index `low` included, element at index `l`excluded
+ # low to l, element at index low included, element at index l excluded
  # [x[low], x[low+1],      ..., x[l-1]
  # [x[low], x[low+1],      ..., x[-1]
  
  c.Upper bound restricted, lower bound is minimum
 >>> x[:high] 
-# `0` to `high`, element at index `0` included, element at index `high` excluded
+# 0 to high, element at index 0 included, element at index high excluded
 # [x[0],   x[1],          ..., x[high-1]]
 # [x[-l],   x[-l+1)],          ..., x[high-1]]
 
